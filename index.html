@@ -1,0 +1,119 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cao Khuong Bao</title>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <!--Begin bai 1-->
+    <h1>Bai 1</h1>
+    <p id="text">Javascript</p>
+    <div>
+        <button id="js-style" onclick="js_style()">
+            Change size and color of javscript Text
+        </button>
+    </div>
+    <!--End bai 1-->
+    <h1>Bai 2</h1>
+    <form id="form1" onsubmit="getFormValue()">
+        First name <input type="text" name="fname">
+        Last name <input type="text" name="lname">
+        <input type="submit" value="Gui thong tin">
+    </form>
+    <!--bai 3-->
+    <button id="button" onclick="button()">Thay doi BackGround</button>
+    <!--cau 4-->
+    <h1>cau 4</h1>
+    <p>
+        <a id="somelink" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="http://www.mp3.zing.vn/">MP3 zing</a></p>
+    <button id="somelink" onclick="getAttributes()"> bam vao day</button> 
+    <!--cau 5-->
+    <h1>cau 5</h1>
+    <title> Insert row in a table</title></br>
+    <table id="sampleTable" border="1">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+        </tr>
+    </table><br>
+    <input type="button" onclick="insert_Row()" value="Insert row">
+    <!--cau 6-->
+    <h1>cau 6</h1>
+    <table id="myTable" border="1">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+        </tr>
+    </table><br>
+    
+        <input type="button" onclick="changeContent()" value="Change content">
+   
+    <!--cau 7-->
+    <h1>cau 7</h1>
+    <head>
+        <title>Create Table</title>
+    <script >
+        $(document).ready(function(){
+            $("button").click(function(){
+              var number_of_rows = $('#rows').val();
+              var number_of_cols = $('#cols').val();
+              var table_body = '<table border="1">';
+              for(var i=0;i<number_of_rows;i++){
+                table_body+='<tr>';
+                for(var j=0;j<number_of_cols;j++){
+                    table_body +='<td>';
+                    table_body +='Table data';
+                    table_body +='</td>';
+                }
+                table_body+='</tr>';
+              }
+                table_body+='</table>';
+               $('#tableDiv').html(table_body);
+            });
+        });
+    </script>
+</head>
+<body>
+<div style="margin-top: 50px; margin-left: 250px">
+    Nhap so dong:<input type="text"  id="rows">
+    Nhap so cot: <input type="text" id="cols">
+    <button>Tao bang</button>
+    <div id="tableDiv" style="margin-top: 40px">
+        Bang se dc tao ra day!!!
+    </div>
+</div>
+<!--cau 8-->
+<h1>Cau 8</h1>
+<form>
+  Remove items:
+  <br>
+  <select id="mySelect" size="4">
+    <option>red</option>
+    <option>green</option>
+    <option>white</option>
+    <option>black</option>
+  </select>
+</form>
+<br>
+
+<button onclick="myFunction()">Remove selected color</button>
+<!--cau9-->
+<h1>cau 9</h1>
+
+    
+
+</body>
+</html>
